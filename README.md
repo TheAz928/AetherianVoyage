@@ -115,28 +115,28 @@ Built with modern web technologies and powered by validated NASA datasets, this 
 ### Installation
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/TheAz928/AetherianVoyage.git
    cd aetherian-voyage
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    pnpm install
    # or
    npm install
    # or
    yarn install
-   \`\`\`
+   ```
 
 3. **Run the development server**
-   \`\`\`bash
+   ```bash
    pnpm dev
    # or
    npm run dev
    # or
    yarn dev
-   \`\`\`
+   ```
 
 4. **Open your browser**
 
@@ -144,7 +144,7 @@ Built with modern web technologies and powered by validated NASA datasets, this 
 
 ### Project Structure
 
-\`\`\`
+```
 aetherian-voyage/
 ├── app/                      # Next.js App Router pages
 │   ├── about/               # About page
@@ -182,7 +182,7 @@ aetherian-voyage/
 │   ├── dzi/                # DZI image tiles (add your own)
 │   └── *.jpg               # Image assets
 └── package.json            # Dependencies
-\`\`\`
+```
 
 ---
 
@@ -190,33 +190,33 @@ aetherian-voyage/
 
 ### Build the application
 
-\`\`\`bash
+```bash
 pnpm build
 # or
 npm run build
 # or
 yarn build
-\`\`\`
+```
 
 ### Start the production server
 
-\`\`\`bash
+```bash
 pnpm start
 # or
 npm start
 # or
 yarn start
-\`\`\`
+```
 
 ### Run linting
 
-\`\`\`bash
+```bash
 pnpm lint
 # or
 npm run lint
 # or
 yarn lint
-\`\`\`
+```
 
 ---
 
@@ -229,25 +229,25 @@ The easiest way to deploy The Aetherian Voyage is using [Vercel](https://vercel.
 #### Option 1: Deploy with Vercel CLI
 
 1. **Install Vercel CLI**
-   \`\`\`bash
+   ```bash
    pnpm add -g vercel
-   \`\`\`
+   ```
 
 2. **Deploy**
-   \`\`\`bash
+   ```bash
    vercel
-   \`\`\`
+   ```
 
 3. **Follow the prompts** to link your project and deploy
 
 #### Option 2: Deploy via GitHub
 
 1. **Push your code to GitHub**
-   \`\`\`bash
+   ```bash
    git add .
    git commit -m "Initial commit"
    git push origin main
-   \`\`\`
+   ```
 
 2. **Import to Vercel**
     - Go to [vercel.com/new](https://vercel.com/new)
@@ -266,16 +266,16 @@ The easiest way to deploy The Aetherian Voyage is using [Vercel](https://vercel.
 ### Deploy to Other Platforms
 
 #### Netlify
-\`\`\`bash
+```bash
 # Install Netlify CLI
 npm install -g netlify-cli
 
 # Build and deploy
 netlify deploy --prod
-\`\`\`
+```
 
 #### Docker
-\`\`\`dockerfile
+```dockerfile
 # Create a Dockerfile
 FROM node:18-alpine AS base
 
@@ -302,13 +302,13 @@ COPY --from=builder /app/.next/static ./.next/static
 
 EXPOSE 3000
 CMD ["node", "server.js"]
-\`\`\`
+```
 
-\`\`\`bash
+```bash
 # Build and run
 docker build -t aetherian-voyage .
 docker run -p 3000:3000 aetherian-voyage
-\`\`\`
+```
 
 ---
 
