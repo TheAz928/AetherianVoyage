@@ -103,7 +103,7 @@ export const universeData: Galaxy[] = [
                                 id: "earth-1",
                                 name: "Blue Marble 2012",
                                 description: "Composite image of Earth from NASA/NOAA satellites",
-                                dziUrl: "/dzi/earth/blue-marble.dzi",
+                                dziUrl: "/dzi/earth/blue_marble/blue_marble.dzi",
                                 thumbnail: "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=400&h=400&fit=crop",
                                 date: "2012-01-25",
                                 mission: "Suomi NPP",
@@ -180,12 +180,12 @@ export const universeData: Galaxy[] = [
                                 id: "mars-1",
                                 name: "Aeolis",
                                 description: "The largest canyon in the solar system",
-                                dziUrl: "/dzi/mars/valles-marineris.dzi",
+                                dziUrl: "/dzi/mars/mars_aeolis/mars_aeolis.dzi",
                                 thumbnail: "https://pngimg.com/d/mars_planet_PNG7.png",
-                                date: "2021-02-18",
-                                mission: "Mars Reconnaissance Orbiter",
-                            },
-                        ],
+                                date: "2023-02-24",
+                                mission: "Mars Reconnaissance Orbiter"
+                            }
+                        ]
                     },
                 ],
             },

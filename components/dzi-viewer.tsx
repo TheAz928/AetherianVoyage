@@ -192,7 +192,7 @@ export function DziViewer({
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.8 }}
-                className="absolute right-4 top-4 z-10 flex flex-col gap-2"
+                className="absolute right-4 top-32 md:top-40 z-10 flex flex-col gap-2" // moved down: top-32 on mobile, top-40 on desktop
             >
                 <Button
                     variant="outline"

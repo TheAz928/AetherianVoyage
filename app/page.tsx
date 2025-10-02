@@ -29,7 +29,7 @@ export default function HomePage() {
       name: "Earth - Blue Marble",
       thumbnail: universeData[0].solarSystems[0].planets[0].images[0].thumbnail,
       description: "Our home planet in stunning detail",
-      url: `/viewer?galaxy=milky-way&system=solar-system&planet=earth&image=earth-blue-marble`,
+      url: `/viewer?galaxy=milky-way&system=sol&planet=earth&image=earth-1`,
     },
     {
       name: "Moon - Lunar Surface",
@@ -41,7 +41,7 @@ export default function HomePage() {
       name: "Mars - Red Planet",
       thumbnail: universeData[0].solarSystems[0].planets[2].images[0].thumbnail,
       description: "The mysterious red neighbor",
-      url: `/viewer?galaxy=milky-way&system=solar-system&planet=mars&image=mars-surface`,
+      url: `/viewer?galaxy=milky-way&system=sol&planet=mars&image=mars-1`,
     },
   ]
 
@@ -327,12 +327,14 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex items-center gap-6">
-              <motion.img
-                src="/nasa-logo.png"
-                alt="NASA"
-                className="h-10 opacity-70 hover:opacity-100 transition-opacity"
-                whileHover={{ scale: 1.1 }}
-              />
+                <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">
+                    <motion.img
+                        src="/nasa-logo.png"
+                        alt="NASA"
+                        className="h-10 opacity-70 hover:opacity-100 transition-opacity"
+                        whileHover={{ scale: 1.1 }}
+                    />
+                </a>
             </div>
             <div className="flex flex-col items-center sm:items-end gap-2">
               <p className="text-sm text-white/50">Data provided by NASA Open Datasets</p>
