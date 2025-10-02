@@ -383,3 +383,15 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar {
+    overflow: auto;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}

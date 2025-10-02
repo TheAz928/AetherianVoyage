@@ -8,7 +8,9 @@ export function BackgroundAudio() {
     const playerRef = useRef<YT.Player | null>(null)
     const [isMuted, setIsMuted] = useState(true)
     const [isLoaded, setIsLoaded] = useState(false)
+    const [showHint, setShowHint] = useState(true)
 
+    // Load YouTube API
     useEffect(() => {
         const tag = document.createElement("script")
         tag.src = "https://www.youtube.com/iframe_api"
@@ -24,7 +26,7 @@ export function BackgroundAudio() {
                     playlist: "C2-bLhU8Tac",
                     modestbranding: 1,
                     controls: 0,
-                    mute: 1, // 🔑 allows autoplay
+                    mute: 1,
                 },
                 events: {
                     onReady: (event) => {
@@ -48,14 +50,34 @@ export function BackgroundAudio() {
         }
     }
 
+    const handleHintClick = () => {
+        toggleMute()
+        setShowHint(false)
+    }
+
     return (
         <>
-            {/* hidden player */}
+            {/* Hidden YouTube player */}
             <div id="yt-player" className="hidden" />
 
+            {/* Hint text above the button */}
+            {isLoaded && isMuted && showHint && (
+                <div className="fixed bottom-20 right-6 z-50 flex flex-col items-center gap-2">
+                    <div className="rounded-lg bg-background/90 px-3 py-1 shadow-lg backdrop-blur-sm">
+                        <span className="text-sm text-primary font-[family-name:var(--font-orbitron)] animate-pulse">
+                            Click to turn on music 🎵
+                        </span>
+                    </div>
+                </div>
+            )}
+
+            {/* Main music button (stays in place) */}
             {isLoaded && (
                 <Button
-                    onClick={toggleMute}
+                    onClick={() => {
+                        toggleMute()
+                        setShowHint(false)
+                    }}
                     size="icon"
                     variant="ghost"
                     className="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-full border border-primary/30 bg-background/80 backdrop-blur-sm hover:bg-background/90 hover:border-primary hover:shadow-glow"

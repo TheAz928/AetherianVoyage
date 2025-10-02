@@ -129,7 +129,7 @@ function ViewerContent() {
                                     Statistics
                                 </Button>
                             </DialogTrigger>
-                            <DialogContent className="max-h-[80vh] max-w-3xl overflow-y-auto">
+                            <DialogContent className="max-h-[80vh] max-w-3xl overflow-y-auto hide-scrollbar">
                                 <DialogHeader>
                                     <DialogTitle className="font-[family-name:var(--font-orbitron)] text-2xl">
                                         {planet.name} - Planetary Statistics
