@@ -41,7 +41,7 @@ export interface Planet {
     color: string
     gradient: string
     images: CelestialImage[]
-    statistics?: PlanetStatistics // Added optional statistics field
+    statistics?: PlanetStatistics
 }
 
 export interface SolarSystem {
@@ -178,7 +178,7 @@ export const universeData: Galaxy[] = [
                         images: [
                             {
                                 id: "mars-1",
-                                name: "Valles Marineris",
+                                name: "Aeolis",
                                 description: "The largest canyon in the solar system",
                                 dziUrl: "/dzi/mars/valles-marineris.dzi",
                                 thumbnail: "https://pngimg.com/d/mars_planet_PNG7.png",

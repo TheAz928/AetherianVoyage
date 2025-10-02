@@ -191,7 +191,7 @@ export default function AboutPage() {
                             <p className="text-xl md:text-2xl leading-relaxed text-emerald-100/90">
                                 Built on validated, publicly accessible NASA datasets.
                             </p>
-                            <div className="space-y-3 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar">
+                            <div className="space-y-3 max-h-[500px] overflow-y-auto pr-4 hide-scrollbar">
                                 <a
                                     href="https://exoplanetarchive.ipac.caltech.edu/docs/data.html"
                                     target="_blank"
