@@ -1,12 +1,12 @@
 import type React from "react"
-import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
-import { Orbitron } from "next/font/google"
+import type {Metadata} from "next"
+import {GeistSans} from "geist/font/sans"
+import {GeistMono} from "geist/font/mono"
+import {Orbitron} from "next/font/google"
 import "./globals.css"
-import { Suspense } from "react"
-import { BackgroundAudio } from "@/components/background-audio"
-import { ClickSounds } from "@/components/click-sounds"
+import {Suspense} from "react"
+import {BackgroundAudio} from "@/components/background-audio"
+import {ClickSounds} from "@/components/click-sounds"
 
 const orbitron = Orbitron({
     subsets: ["latin"],
@@ -27,12 +27,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="dark hide-scrollbar">
-        <body
-            className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${orbitron.variable}`}
-        >
-        <BackgroundAudio />
-        <ClickSounds />
+        <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${orbitron.variable}`}>
+        <BackgroundAudio/>
+        <ClickSounds/>
         <Suspense fallback={null}>{children}</Suspense>
+
         </body>
         </html>
     )

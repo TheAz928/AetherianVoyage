@@ -88,11 +88,7 @@ export function AnnotationLayer({ isActive, zoom, position }: AnnotationLayerPro
                         }}
                     >
                         <div className="relative">
-                            <MapPin
-                                className="h-8 w-8 drop-shadow-lg"
-                                style={{ color: annotation.color }}
-                                fill={annotation.color}
-                            />
+                            <MapPin className="h-8 w-8 drop-shadow-lg" style={{ color: annotation.color }} fill={annotation.color} />
                             <div className="absolute left-1/2 top-full mt-2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-lg border border-primary/50 bg-background/95 px-3 py-1.5 backdrop-blur-sm">
                                 <span className="text-sm font-medium">{annotation.label}</span>
                                 <button
