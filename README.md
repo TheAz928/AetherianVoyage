@@ -12,7 +12,7 @@
 
 <img src="public/stunning-view-of-earth-from-space-with-stars-and-g.jpg" alt="The Aetherian Voyage Banner" width="800" style="border-radius: 12px; margin: 20px 0;" />
 
-**[Live Demo](https://test.ltd)** • **[Documentation](#features)** • **[Report Bug](https://github.com/TheAz928/AetherianVoyage/issues)** • **[Request Feature](https://github.com/TheAz928/AetherianVoyage/issues)**
+**[Live Demo](https://aetherian-voyage.vercel.app/)** • **[Documentation](#features)** • **[Report Bug](https://github.com/TheAz928/AetherianVoyage/issues)** • **[Request Feature](https://github.com/TheAz928/AetherianVoyage/issues)**
 
 </div>
 
