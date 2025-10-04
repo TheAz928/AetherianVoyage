@@ -413,7 +413,7 @@ If you find this project helpful, please consider:
 
 ### 🚀 Ready to Explore the Cosmos?
 
-**[Launch Application](https://test.ltd)** • **[View Documentation](#features)**
+**[Launch Application](https://aetherian-voyage.vercel.app/)** • **[View Documentation](#features)**
 
 ---
 
